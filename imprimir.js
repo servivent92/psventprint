@@ -39,7 +39,7 @@ function savePDF() {
     };
 
     // Captura el contenido del div con las opciones especificadas
-    html2canvas(document.getElementById('divImprimir'), options).then(function (canvas) {
+    html2canvas(document.getElementById('doc'), options).then(function (canvas) {
         // Crea una nueva instancia de jsPDF
         var pdf = new jsPDF();
 
@@ -69,7 +69,7 @@ function printPDF() {
     };
 
     // Captura el contenido del div con las opciones especificadas
-    html2canvas(document.getElementById('divImprimir'), options).then(function (canvas) {
+    html2canvas(document.getElementById('doc'), options).then(function (canvas) {
         // Crea una nueva instancia de jsPDF
         var pdf = new jsPDF();
 
